@@ -1,4 +1,4 @@
-import { powerUpIntervals, upgrades } from "/constants/upgrades.js";
+import { powerUpIntervals, upgrades } from "./constants/upgrades.js";
 
 let gem = document.querySelector(".gem-cost");
 let parsedGem = parseFloat(gem.innerHTML);
