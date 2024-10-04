@@ -13,11 +13,11 @@ let upgradesNavButton = document.getElementById('upgrades-nav-button')
 let gpc = 1;
 let gps = 0;
 
-const bgm = new Audio('/audio/bgm.mp3')
+const bgm = new Audio('./audio/bgm.mp3')
 bgm.volume = 0.03
 
 function incrementGem(event) {
-  const clickingSound = new Audio('/audio/click.wav')
+  const clickingSound = new Audio('./audio/click.wav')
   clickingSound.play()
 
   gem.innerHTML = Math.round(parsedGem += gpc);
@@ -54,7 +54,7 @@ function buyUpgrade(upgrade) {
     }
   
     if (parsedGem >= mu.parsedCost) {
-      const upgradeSound = new Audio('/audio/upgrade.mp3');
+      const upgradeSound = new Audio('./audio/upgrade.mp3');
       upgradeSound.volume = 0.1;
       upgradeSound.play();
   
